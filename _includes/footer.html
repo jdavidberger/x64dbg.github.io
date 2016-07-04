@@ -40,10 +40,9 @@ function isMobile(){
     
 $(function() {
         if (!isMobile()) {
-		$(".panel").css({"min-height":$(window).height()});
+		$(".panel").css({"min-height":$(window).height() + 30});
 		$.scrollify({
-			section:".panel",
-			setHeights: false
+			section:".panel"
 		});
 		
 		$(".scroll").click(function(e) {
