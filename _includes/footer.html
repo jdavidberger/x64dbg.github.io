@@ -38,32 +38,21 @@ function isMobile(){
  return isMobile.any()
 }
     
-
-    
-$( document ).ready(function() {      
-         
-
-
-        //Conditional script here
-    $(function() {
-        
+$(function() {
         if (!isMobile()) {
-	$(".panel").css({"min-height":$(window).height()});
-	$.scrollify({
-		section:".panel",
-		offset:30
-	});
-	
+		$(".panel").css({"min-height":$(window).height()});
+		$.scrollify({
+			section:".panel",
+			setHeights: false
+		});
+		
+		$(".scroll").click(function(e) {
+			e.preventDefault();
+			$.scrollify("move",$(this).attr("href"));
+		});
+        }
+});
 
-	$(".scroll").click(function(e) {
-		e.preventDefault();
-		$.scrollify("move",$(this).attr("href"));
-	});}else{}
-        });
-    
-    });
-
-    
 </script>
 {% endif %}
 
