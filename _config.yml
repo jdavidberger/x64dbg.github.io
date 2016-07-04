@@ -1,7 +1,7 @@
 # Site settings
 title: x64dbg
 description: "An open-source x64/x32 debugger for windows."
-baseurl: ""
+baseurl: "/x64dbg.github.io/"
 url: "http://www.x64dbg.com"
 
 # Build settings
