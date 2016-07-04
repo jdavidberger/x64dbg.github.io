@@ -48,7 +48,7 @@ $( document ).ready(function() {
     $(function() {
         
         if (!isMobile()) {
-	$(".panel").css({"height":$(window).height()});
+	$(".panel").css({"min-height":$(window).height()});
 	$.scrollify({
 		section:".panel"
 	});
